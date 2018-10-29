@@ -1,3 +1,8 @@
 <resources>
+    <!--<string name="app_name">Score Keeper</string>-->
+    <string name="score">0</string>
+    <string name="pointer_two">2 Pointer</string>
+    <string name="pointer_three">3 Pointer</string>
+    <string name="winner">Declare Winner</string>
     <string name="app_name">Score Keeper</string>
 </resources>
