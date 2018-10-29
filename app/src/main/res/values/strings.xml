@@ -4,5 +4,6 @@
     <string name="pointer_two">2 Pointer</string>
     <string name="pointer_three">3 Pointer</string>
     <string name="winner">Declare Winner</string>
+    <string name="reset">Reset</string>
     <string name="app_name">Score Keeper</string>
 </resources>

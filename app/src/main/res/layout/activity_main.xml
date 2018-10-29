@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/declareWinner"
+        app:layout_constraintBottom_toTopOf="@id/bottomContainer"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
@@ -33,7 +33,7 @@
                 android:layout_height="96dp"
                 android:gravity="center"
                 android:text="@string/score"
-                android:textSize="18sp"
+                android:textSize="36sp"
                 android:textStyle="bold" />
 
             <Button
@@ -64,7 +64,7 @@
                 android:layout_height="96dp"
                 android:gravity="center"
                 android:text="@string/score"
-                android:textSize="18sp"
+                android:textSize="36sp"
                 android:textStyle="bold" />
 
             <Button
@@ -83,12 +83,28 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/declareWinner"
+    <LinearLayout
+        android:id="@+id/bottomContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/winner"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/declareWinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showWinner"
+            android:text="@string/winner"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="doReset"
+            android:text="@string/reset" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
